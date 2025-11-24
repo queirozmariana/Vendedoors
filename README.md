@@ -1,7 +1,9 @@
-# ❤️ Vendedoors - Abrindo portas para grandes negócios!
+# 🚪 Vendedoors - Abrindo portas para grandes negócios!
 
-> Projeto desenvolvido por estudantes com foco em **empreendedorismo colaborativo, impacto social e inclusão digital**.  
-> Esta é a **versão em desenvolvimento** do site **Vendedoors**, plataforma que conecta microempreendedores, revendedores e clientes.
+🔗 **[Acesse o site](https://vendedoors.netlify.app/)**
+
+> Plataforma desenvolvida por estudantes com foco em **empreendedorismo colaborativo, impacto social e inclusão digital**.  
+> Esta é a **versão mais recente** do site Vendedoors, já publicada e em constante evolução.
 
 ---
 
@@ -11,6 +13,7 @@
 - [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [📁 Estrutura do Site](#-estrutura-do-site)
 - [⏱️ Como Acessar o Projeto](#️-como-acessar-o-projeto)
+- [📱 Acesso via QR Code](#-acesso-via-qr-code)
 - [👥 Equipe](#-equipe)
 - [📬 Contato](#-contato)
 
@@ -18,56 +21,86 @@
 
 ## 📘 Sobre o Projeto
 
-**Vendedoors** é uma plataforma voltada para o fortalecimento do **microempreendedorismo local**, conectando revendedores porta a porta a clientes próximos, através de uma rede social colaborativa.  
-O objetivo é **valorizar o trabalho autônomo** e ampliar o alcance de pequenos negócios, especialmente de mulheres e jovens que desejam empreender com autonomia e visibilidade.
+**Vendedoors** é uma plataforma criada para fortalecer o **microempreendedorismo local**, conectando revendedores porta a porta, pequenos comerciantes e clientes.  
+A proposta é oferecer um espaço que valorize a autonomia, a divulgação de produtos e a mobilidade dos vendedores.
 
-A plataforma também reforça valores de **cooperação, independência financeira e inclusão digital**, sendo inspirada pelos **Objetivos de Desenvolvimento Sustentável (ODS 5 e 8)** da ONU.
+O projeto promove **independência financeira**, **colaboração** e **inclusão digital**, inspirado nos **ODS 5 e 8** da ONU, que incentivam igualdade de oportunidades e crescimento econômico.
 
-Atualmente, o site está **em desenvolvimento**, com o objetivo de expandir suas funcionalidades e integrar um sistema de login, cadastro de produtos e área personalizada para usuários.
+Nesta versão atual, o site inclui páginas institucionais e será futuramente ampliado para integrar:  
+- sistema de login  
+- área personalizada para vendedores  
+- cadastro de produtos  
+- painéis interativos
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-Durante o desenvolvimento, priorizamos ferramentas acessíveis e sustentáveis, com foco em aprendizado e boas práticas:
+Durante o desenvolvimento, priorizamos ferramentas acessíveis e eficazes:
 
 | **Tecnologia** | **Justificativa** |
 |----------------|------------------|
-| *HTML* | Estrutura das páginas e organização de conteúdo |
-| *CSS* | Estilização com base na identidade visual em tons de terracota e vermelho |
-| *JavaScript* | Interatividade e responsividade de botões e menus |
-| *Git & GitHub* | Controle de versão e colaboração entre os integrantes |
+| *HTML* | Estrutura das páginas e organização semântica |
+| *CSS* | Estilização seguindo a identidade visual com tons de terracota |
+| *JavaScript* | Interatividade e manipulação de elementos |
+| *Git & GitHub* | Controle de versão e colaboração entre integrantes |
+| *Netlify* | Hospedagem rápida, gratuita e otimizada |
+| *QR Code* | Facilita o acesso via dispositivos móveis |
 
 ---
 
 ## 📁 Estrutura do Site
 
-O site contém as seguintes seções principais:
+O site possui as seguintes páginas principais:
 
-- **Página Inicial** – Apresentação da proposta da Vendedoors e dos benefícios para microempreendedores e revendedores.  
-- **Sobre** – História da plataforma, missão, valores e visão do projeto.  
-- **Produtos** – Espaço dedicado à divulgação dos produtos e catálogos dos vendedores parceiros.  
-- **Eventos** – Ações, feiras, encontros e capacitações promovidas pela comunidade Vendedoors.  
-- **Cadastro** – Área para novos usuários, vendedores e parceiros se registrarem na plataforma.  
-- **Contato** – Formulário de contato, redes sociais e e-mail da equipe.  
+- **Página Inicial (home)** – Apresentação da plataforma e benefícios.  
+- **Sobre** – História, missão, valores e visão da Vendedoors.  
+- **Produtos** – Catálogos e itens divulgados pelos vendedores parceiros.  
+- **Eventos** – Feiras, encontros e ações da comunidade Vendedoors.  
+- **Cadastro** – Espaço para novos usuários e vendedores se registrarem.  
+- **Contato** – Formulário, redes sociais e informações de comunicação.
 
 ---
 
 ## ⏱️ Como Acessar o Projeto
 
-O site **ainda está em fase de desenvolvimento** e não possui hospedagem pública no momento, mas em breve será publicado com acesso gratuito.  
-Assim que o link oficial estiver disponível, esta seção será atualizada com o acesso direto e o QR Code.  
-Enquanto isso, é possível visualizar o código-fonte completo neste repositório e acompanhar a evolução do projeto.
+Você pode acessar o projeto **imediatamente**, sem instalar nada:
+
+### ✅ Passo a passo:
+
+1. Clique no link abaixo:  
+   👉 **https://vendedoors.netlify.app/**
+2. O site abrirá automaticamente.
+3. Navegue pelas páginas e acompanhe as atualizações do projeto.
+
+💡 *Dica:* A visualização é melhor em computador, mas o site também é adaptado para celular.
+
+---
+
+## 📱 Acesso via QR Code
+
+Você também pode escanear o QR Code abaixo com a câmera do seu celular para acessar rapidamente o projeto:
+
+<img width="250" height="250" alt="QR CODE VENDEDOORS" src="https://github.com/user-attachments/assets/34780e28-a06a-4f93-8225-7bf41a4c037c" />
 
 ---
 
 ## 👥 Equipe
 
-**Mariana Queiroz** – Estrutura HTML e organização geral do projeto.  
-**Julia Bergstron** – Layout e identidade visual.  
-**Melissa Celentano** – Desenvolvimento CSS e responsividade.  
-**Marcos Vinícius Bueno** – Estrutura de navegação e interatividade.  
-**Matheus Brito** – Auxílio na integração das páginas e testes de funcionalidade.
+**Mariana Queiroz**  
+Responsável pela estrutura HTML e organização geral do projeto.
+
+**Julia Bergstron**  
+Responsável pela identidade visual e layout do site.
+
+**Melissa Celentano**  
+Desenvolvimento de CSS e responsividade.
+
+**Marcos Vinícius Bueno**  
+Construção da navegação e interatividade.
+
+**Matheus Brito**  
+Auxílio na integração geral das páginas e testes de funcionalidade.
 
 ---
 
