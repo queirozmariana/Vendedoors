@@ -1,0 +1,317 @@
+ :root {
+  --red: #d62828;
+  --beige: #fff3d4;
+  --dark: #2b2b2b;
+  --text: #1a1a1a;
+  --white: #fff;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Header */
+header {
+  background: #d32f2f;
+  color: #fff;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+   color: #000000;
+}
+
+.logo span {
+  font-family: serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.intro{
+  background-color: var(--beige);
+}
+/* Seção Cadastro */
+.cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 60px 40px;
+  background: #fff3d6;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.box-esquerda {
+  background: #d62828;
+  color: white;
+  padding: 40px 25px;
+  border-radius: 15px;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box-esquerda .icone {
+  width: 100px;
+  height: 100px;
+  background: #fff3d6;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d62828;
+  font-size: 45px;
+}
+
+.box-esquerda h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.box-direita {
+  background: #f8ecd9;
+  padding: 40px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.box-direita form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.box-direita label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.box-direita input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.box-direita input:focus {
+  border-color: #d62828;
+  outline: none;
+}
+
+.box-direita button {
+  background: #d62828;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.box-direita button:hover {
+  background: #b71c1c;
+}
+
+.btn {
+
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.entrar {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn.entrar:hover {
+  background-color: #b71c1c;
+}
+
+.btn-cadastro:hover {
+  background: #111;
+}
+
+/* Texto informativo */
+.informativo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff3d6;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.informativo .texto {
+  max-width: 500px;
+}
+
+.informativo h3 {
+  color: #d62828;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.informativo p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.informativo .imagem img  {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+}
+
+.informativo .imagem img  {
+  width: 110%;
+  max-width: 300px; 
+  height: auto;
+  border: 3px solid var(--red);
+  border-radius: 50% 40% 60% 50% / 60% 50% 40% 50%;
+  object-fit: cover;
+}
+/* Rodapé */
+footer {
+  background: #1a1a1a;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 25px;
+}
+
+footer a {
+  color: #ffe3b3;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* ============================================
+   🔧 CORREÇÃO DO VAZAMENTO — APENAS MOBILE
+=============================================*/
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  * {
+    max-width: 100vw;   /* impede ultrapassar largura */
+  }
+
+  /* Ajuste do header NO CELULAR */
+  header {
+    padding: 15px 20px !important;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* CADASTRO — um item embaixo do outro */
+  .cadastro {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+    max-width: 100% !important;
+  }
+
+  .box-esquerda,
+  .box-direita {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .box-esquerda {
+    padding: 30px 20px;
+  }
+
+  .box-direita {
+    padding: 30px 20px;
+  }
+
+  /* Ícone reduzido para caber melhor */
+  .box-esquerda .icone {
+    width: 80px;
+    height: 80px;
+    font-size: 38px;
+  }
+
+  /* INFORMATIVO — Coluna no celular */
+  .informativo {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .informativo .imagem img {
+    width: 80%;
+    max-width: 260px;
+  }
+
+  /* FOOTER — Colunas empilhadas */
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

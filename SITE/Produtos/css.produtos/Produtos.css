@@ -1,0 +1,309 @@
+/* Produtos */
+.intro{
+  background-color: var(--beige);
+}
+.produtos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--beige);
+}
+
+.produtos h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--red);
+
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+    justify-items: center;
+}
+
+/* Card quadrado */
+.card {
+    background:#f2e1cd;
+    border-radius: 12px; 
+    text-align: center;
+    width: 200px;
+    height: 200px; 
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Imagem sempre proporcional dentro do quadrado */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card p {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    margin: 0; 
+}
+
+.banner img {
+    width: 100%;           
+    height: 70vh;          
+    display: block;       
+    border-radius: 0;      
+    object-fit: cover;     
+}
+/* GALERIA DE PERFIS */
+.pagina-eventos {
+  background-color: var(--beige);
+  padding: 60px 10%;
+}
+
+.galeria-eventos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeria-eventos .titulo-secao {
+  text-align: center;
+  font-size: 32px;
+  color: #b22222;
+  margin-bottom: 40px;
+}
+
+.galeria-swiper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  background-color: #fff;
+  border: 2px solid #b22222;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 300px; /* mais alto, formato de retrato */
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 12px;
+}
+
+.swiper-slide h2 {
+  color: #b22222;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.swiper-slide p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Botão de curtir ❤️ */
+.btn-like {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #888;
+  transition: 0.3s;
+}
+
+.btn-like:hover {
+  color: #e63946;
+  transform: scale(1.2);
+}
+
+.btn-like.active {
+  color: #e63946;
+}
+.btn-perfil {
+    padding: 6px 12px;
+    background-color: var(--red);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+
+.btn-perfil:hover {
+    background-color: #b22a28; /* Tom um pouco mais escuro do vermelho */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Container */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background: var(--red);
+    border: 2px solid #b22222;
+    border-radius: 12px;
+    width: 85%;
+    margin: 30px auto;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Campos gerais */
+.filtros input,
+.filtros select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    min-width: 150px;
+    transition: border 0.2s ease;
+}
+
+.filtros input:focus,
+.filtros select:focus {
+    border: 1px solid #b22222;
+}
+
+/* Preço (min e máx lado a lado) */
+.filtro-preco {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color:var(--text);
+}
+
+.filtro-preco input {
+    width: 80px;
+    text-align: center;
+}
+
+/* CORREÇÃO GERAL — impede o fundo branco no lado direito */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* --------------------------------------------- */
+/* RESPONSIVIDADE GERAL PARA CELULAR */
+/* Aplica abaixo de 768px */
+/* --------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* --- GRID DE PRODUTOS: UM EMBAIXO DO OUTRO --- */
+    .grid-produtos {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .card {
+        width: 85% !important;
+        height: auto !important;
+        padding: 18px;
+    }
+
+    .card img {
+        height: auto !important;
+        max-height: 180px;
+        object-fit: contain;
+    }
+
+    /* --- BANNER RESPONSIVO --- */
+    .banner {
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto !important; /* garante que não corta */
+        object-fit: contain !important; 
+        display: block;
+    }
+
+    /* --- FILTROS EMPILHADOS (UM EMBAIXO DO OUTRO) --- */
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .filtros input,
+    .filtros select {
+        width: 100% !important;
+        min-width: 0;
+    }
+
+    .filtro-preco {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filtro-preco input {
+        width: 45% !important;
+    }
+
+    /* --- GALERIA DE VENDEDORES --- */
+    .swiper-slide img {
+        height: 220px !important;
+    }
+
+    .pagina-eventos {
+        padding: 40px 20px;
+    }
+
+    /* --- CENTRALIZA TODO O RESTO --- */
+    section,
+    .pagina-eventos,
+    .produtos {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+

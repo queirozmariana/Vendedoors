@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Profile</title>
+  <link rel="stylesheet" href="Perfil Cliente.css">
+  <link rel="stylesheet" href="../CSS/Root.css">
+  <script src="../root.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main class="intro">
+   <!-- HEADER -->
+  <header>
+    <div class="logo"><span>VENDEDOOR'S</span></div>
+    <nav>
+      <ul>
+       <li><a href="../Home/Home.html">Home</a></li>
+          <li><a href="../Sobre/Sobre.html">About</a></li>
+          <li><a href="../Produtos/Produtos.html">Products</a></li>
+          <li><a href="../Eventos/Eventos.html">Events</a></li>
+          <li><a href="../Cadastro/Cadastro.html">Sign Up</a></li>
+          <li><a href="../Contato/Contato.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br><br>
+<section class="perfil-area">
+  <h1>My Profile</h1>
+  <div class="perfil-box">
+    
+    <!-- LEFT -->
+    <div class="perfil-card">
+      <div class="perfil-foto">
+        <img src="../Produtos/img.produtos/Perfis/perfil.amanda.jfif" alt="Profile Photo">
+      </div>
+      <h3>Amanda de Braga Filha</h3>
+      <p>Love to travel ✈️ | Practical and sustainable products</p>
+      <button class="perfil-btn confirmar">Confirm</button>
+      <button class="perfil-btn editar">Edit</button>
+    </div>
+
+    <!-- RIGHT -->
+    <form class="perfil-form">
+      <label>Full name or professional name</label>
+      <input type="text" value="Amanda de Braga Filha">
+
+      <label>Location</label>
+      <input type="text" value="Rua Carajós - 152">
+
+      <label>Description</label>
+      <textarea>I love to travel and look for practical products to help with my organization.</textarea>
+
+      <label>Preferences</label>
+      <textarea>Organizing boxes, crafts and ceramic pieces.</textarea>
+
+      <button type="submit" class="perfil-btn salvar">Save Changes</button>
+    </form>
+  </div>
+</section>
+
+<!-- Review Wall Section -->
+<section class="mural">
+  <h2>Review Wall</h2>
+  <div class="mural-card">
+    <img src="../Produtos/img.produtos/Produtos/Meias.png" alt="10 children's socks">
+    <div class="mural-info">
+      <h3>Handmade Wool Socks</h3>
+      <p class="estrelas">★★★★★</p>
+      <p>"I loved the experience! The seller was super nice and explained everything calmly. Much better than buying online without understanding the product."</p>
+      <p class="autor">—Amanda de Braga, 02/13/25</p>
+    </div>
+  </div>
+</section>
+
+<div class="produtos-container">
+  <!-- Favorites -->
+  <section class="favoritos">
+    <h2>My Favorites</h2>
+    <div class="grid-produtos">
+      <div class="produto">
+        <span class="favorito"><i class="fas fa-heart"></i></span>
+        <img src="../Produtos/img.produtos/Produtos/abridor de vinho elétrico.png" alt="Electric wine opener">
+        <p>Electric Opener</p>
+        <span>$85.00</span>
+      </div>
+      <div class="produto">
+        <span class="favorito"><i class="fas fa-heart"></i></span>
+          <img src="../Produtos/img.produtos/Produtos/5 Camisetas.png" alt="5 t-shirts">
+        <p>T-Shirts</p>
+        <span>$85.00 each</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart -->
+  <section class="carrinho">
+    <h2>My Cart</h2>
+    <div class="grid-produtos">
+      <div class="produto">
+        <img src="../Produtos/img.produtos/Produtos/Calças jeans.png" alt="2 pairs of jeans">
+        <p>Jeans</p>
+        <span>$210.00</span>
+      </div>
+      <div class="produto">
+     <img src="../Produtos/img.produtos/Produtos/3 Blusas.png" alt="3 sweatshirts">
+        <p>Sweatshirt</p>
+        <span>$80.00</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+      <div class="footer-col">
+          <p><strong>Vendedoor's © 2025</strong> <br>Opening doors for great business.</p>
+      </div>
+      <div class="footer-col">
+          <p><strong>We serve</strong> all over Brazil</p>
+          <p>Support: Monday to Friday, from 8 a.m. to 6 p.m.</p>
+      </div>
+      <div class="footer-col">
+          <p><strong>Social media:</strong></p>
+          <p><a href="https://www.instagram.com/vendedoors_oficial?igsh=MTdpOXJwOGhmaW9uNg=="><i class="fab fa-instagram"></i> Instagram</a></p>
+          <p><a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a></p>
+          <p><a href="https://youtube.com/@etecdazonaleste2949?si=Ow6cP2OY3UG0UZ6-"><i class="fab fa-youtube"></i> YouTube</a></p>
+      </div>
+      <div class="footer-col">
+          <p><a href="../Política de Privacidade/Privacidade.html">Privacy Policy</a></p>
+          <p><a href="../Termos de Uso/termos.html">Terms of Use</a></p>
+      </div>
+  </div>
+</footer>
+</main>
+</body>
+</html>

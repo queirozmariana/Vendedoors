@@ -1,0 +1,369 @@
+/* ----------------------- */
+/* INTRO - SEÇÃO DE EVENTOS */
+/* ----------------------- */
+#section {
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.intro {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--beige);
+}
+
+.intro__ h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 24px; /* espaçamento do H1 para o grid */
+  text-align: start;
+}
+
+/* PRIMEIRO GRID ALINHADO AO TOPO */
+.intro__grid:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start; /* topo da imagem alinhado com o texto */
+  justify-items: center; /* centraliza horizontalmente */
+  margin-bottom: 60px;
+}
+
+.intro__grid:first-of-type .intro__text {
+  text-align: left;
+}
+
+.intro__grid:first-of-type .intro__image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* GRIDS SEGUINTES */
+.intro__grid:not(:first-of-type) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center; /* imagem no centro verticalmente */
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.intro__grid .intro__text {
+  text-align: left;
+}
+
+.intro__text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 500px;
+  margin: 0;
+}
+
+.intro__text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: var(--red);
+}
+
+/* IMAGENS */
+.intro__image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 3px solid var(--red);
+  border-radius: 50% 40% 60% 50% / 60% 50% 40% 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+
+  .intro__grid {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  /* Texto sempre em cima */
+  .intro__text {
+    order: 1;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Imagem sempre embaixo */
+  .intro__image {
+    order: 2;
+  }
+
+  .intro__image img {
+    width: auto;
+    max-width: 90vw;
+    height: auto;
+  }
+}
+.intro h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 30px auto;
+}
+
+
+/* DESTAQUE */
+.destaque {
+  background: var(--red);
+  color: var(--white);
+  padding: 30px 10%;
+  text-align: center;
+}
+
+.destaque h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center; /* título centralizado */
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--beige);
+  color: var(--text);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left; /* texto alinhado à esquerda */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+#paragrafo {
+  text-align: left;
+}
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  text-align: center; /* só o título do card centralizado */
+}
+
+.card h3 span {
+  color: var(--red);
+}
+
+.card img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 3px solid var(--red);
+}
+
+
+/* GALERIA DE EVENTOS - ISOLADA */
+.pagina-eventos {
+  background-color: #fdf6e3; 
+  padding: 60px 10%; /* distância lateral maior */
+}
+
+.galeria-eventos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.galeria-eventos .titulo-secao {
+  text-align: center;
+  font-size: 32px;
+  color: #b22222; 
+  margin-bottom: 40px;
+}
+
+.galeria-swiper {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  background-color: var(--beige); 
+  border: 2px solid #b22222; 
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+  transform: translateY(-5px);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid var(--red);
+}
+
+.swiper-slide h2, .swiper-slide h3 {
+  color: #b22222; 
+  margin: 12px 0 8px 0;
+  font-size: 20px;
+}
+
+.swiper-slide p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* ========================================================= */
+/* 🔧 CORREÇÃO GLOBAL — impede o branco no lado direito */
+/* ========================================================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden !important;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* ========================================================= */
+/* 🔧 INTRO EVENTOS — RESPONSIVO CORRETO */
+/* ========================================================= */
+
+@media (max-width: 992px) {
+
+  /* GRID vira coluna */
+  .intro__grid {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px !important;
+      padding: 0 10px;
+      text-align: center !important;
+  }
+
+  /* Texto sempre em cima */
+  .intro__text {
+      order: 1;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center !important;
+  }
+
+  /* Imagem sempre embaixo */
+  .intro__image {
+      order: 2;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .intro__image img {
+      max-width: 85vw !important;
+      height: auto;
+  }
+
+  /* Título centralizado no celular */
+  .intro h1 {
+      text-align: center !important;
+      font-size: 36px;
+  }
+}
+
+/* ========================================================= */
+/* 🔧 DESTAQUE — evita overflow e centraliza melhor */
+/* ========================================================= */
+
+@media (max-width: 768px) {
+
+    .destaque {
+        padding: 30px 5%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+
+    .card {
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center !important;
+    }
+
+    #paragrafo {
+        text-align: center !important;
+    }
+
+    .card img {
+        width: 90% !important;
+        height: auto;
+        max-height: 240px;
+    }
+}
+
+/* ========================================================= */
+/* GALERIA DE EVENTOS — CORREÇÃO TOTAL */
+/* ========================================================= */
+
+@media (max-width: 992px) {
+
+    .pagina-eventos {
+        padding: 50px 5%;
+    }
+
+    .galeria-eventos {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .swiper-slide {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .swiper-slide img {
+        height: auto;
+        max-height: 220px;
+    }
+
+    .swiper-slide h2,
+    .swiper-slide h3 {
+        font-size: 18px;
+    }
+
+    .swiper-slide p {
+        font-size: 14px;
+    }
+}
+
+/* Prevent ANY overflow from Swiper */
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+    max-width: 100% !important;
+    overflow: hidden;
+}

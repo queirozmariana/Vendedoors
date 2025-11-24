@@ -1,0 +1,408 @@
+ :root {
+  --red: #d62828;
+  --beige: #fff3d4;
+  --dark: #2b2b2b;
+  --text: #1a1a1a;
+  --white: #fff;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Header */
+header {
+  background: #d32f2f;
+  color: #fff;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+   color: #000000;
+}
+
+.logo span {
+  font-family: serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+/* Área de perfil */
+.intro{
+    background-color: var(--beige);
+}
+.perfil-area {
+  padding: 40px 5%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+ 
+}
+
+.perfil-area h1 {
+    font-size: 40px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+/* Container dividido */
+.perfil-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--red);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+}
+
+/* Card do perfil (esquerda) */
+.perfil-card {
+  flex: 1;
+  max-width: 350px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.perfil-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--red, #e63946);
+  margin: 0 auto 15px;
+}
+.perfil-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botões do perfil */
+.perfil-btn {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.perfil-btn.confirmar { background: var(--red, #e63946); color: #fff; }
+.perfil-btn.editar { background: #f1f1f1; color: #333; }
+.perfil-btn.salvar { background: var(--dark); color: #fff; }
+
+.perfil-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Formulário (direita) */
+.perfil-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.perfil-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  text-align: left;
+}
+
+.perfil-form input,
+.perfil-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.perfil-form textarea {
+  resize: none;
+  min-height: 60px;
+}
+/* Mural */
+.mural {
+  padding: 50px 5%;
+  text-align: center;
+  background: var(--beige);
+}
+
+.mural h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+/* Cartão de avaliação */
+.mural-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  max-width: 700px;
+  margin: 0 auto 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mural-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* Imagem do produto */
+.mural-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid var(--red, #e63946);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Informações da avaliação */
+.mural-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.mural-info h3 {
+  color: var(--red);
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.mural-info .estrelas {
+  color: gold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.mural-info p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.mural-info .autor {
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .mural-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mural-card img {
+    margin-bottom: 15px;
+  }
+
+  .mural-info {
+    min-width: 100%;
+  }
+}
+/* Container geral para Favoritos e Carrinho */
+.produtos-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 50px 5%;
+}
+
+/* Cada seção dentro do container */
+.favoritos, .carrinho {
+  background: #f8f0e3;
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Títulos */
+.favoritos h2, .carrinho h2 {
+   font-size: 40px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+/* Grid vertical para produtos dentro de cada seção */
+.grid-produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card do produto */
+.produto {
+  background: var(--white, #fff);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagem do produto */
+.produto img {
+  width: 100%;
+  height: 200px;          /* altura fixa para padronizar */
+  object-fit: cover;      /* corta e ajusta a imagem sem distorcer */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Texto do produto */
+.produto p {
+  font-weight: 500;
+  color: var(--dark, #333);
+  margin-bottom: 5px;
+}
+
+.produto span {
+  font-weight: bold;
+  color: var(--red, #e63946);
+}
+
+.produto .favorito {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255, 255, 255, 0.7); /* fundo para destacar */
+  border-radius: 50%;
+  padding: 6px;
+  color: #e63946;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.produto .favorito:hover {
+  transform: scale(1.2);
+  color: #d62828;
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .produtos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .favoritos, .carrinho {
+    max-width: 90%;
+  }
+}
+
+
+/* FOOTER */
+.site-footer {
+  background: var(--dark);
+  color: var(--white);
+  margin-inline: auto;
+  font-size: 14px;
+}
+.footer-grid {
+  display:  flex ;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: start;
+}
+.footer-grid a {
+  color: var(--white);
+  text-decoration: none;
+
+}
+
+.footer-col a:hover {
+  color: #D63C33;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .perfil-box {
+    flex-direction: column;
+  }
+
+  .mural-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

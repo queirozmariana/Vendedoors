@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Profile - Vendedoors</title>
+  <link rel="stylesheet" href="../Cadastro/Perfil Vendedor.css">
+  <link rel="stylesheet" href="../CSS/Root.css">
+  <script src="../root.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<main class="intro"> 
+ <!-- HEADER -->
+ <header>
+    <div class="logo"><span>VENDEDOOR'S</span></div>
+    <nav>
+      <ul>
+       <li><a href="../Home/Home.html">Home</a></li>
+          <li><a href="../Sobre/Sobre.html">About</a></li>
+          <li><a href="../Produtos/Produtos.html">Products</a></li>
+          <li><a href="../Eventos/Eventos.html">Events</a></li>
+          <li><a href="../Cadastro/Cadastro.html">Register</a></li>
+          <li><a href="../Contato/Contato.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header> 
+  <br><br> 
+<section class="perfil-area">
+  <h1>My Profile</h1>
+  <div class="perfil-box">
+    
+    <!-- LEFT -->
+    <div class="perfil-card">
+      <div class="perfil-foto">
+        <img src="../Produtos/img.produtos/Perfis/perfil.cassia.jfif" alt="Profile Photo">
+      </div>
+      <h3>Cássia Portiman</h3>
+      <p>Handmade crochet with love 🧶 | Unique and carefully crafted pieces 💛</p>
+      <button class="perfil-btn confirmar">Confirm</button>
+      <button class="perfil-btn editar">Edit</button>
+    </div>
+
+    <!-- RIGHT -->
+    <form class="perfil-form">
+      <label>Full name or professional name</label>
+      <input type="text" value="Cássia Portiman">
+
+      <label>Location</label>
+      <input type="text" value="Natalia Braga Street - 128">
+
+      <label>Main product or service category</label>
+      <input type="text" value="Women's crochet clothing">
+
+      <label>Professional description or bio</label>
+      <textarea>I'm an artisan with a passion for crochet! 🧶
+Each piece is handmade with care and attention to detail.
+Custom orders and ready-to-deliver items 💛</textarea>
+
+      <button type="submit" class="perfil-btn salvar">Save Changes</button>
+    </form>
+  </div>
+</section>
+
+<section class="destaque-vendedor">
+  <h2>Featured Products</h2> 
+  <div class="destaque-box">
+
+    <div class="destaque-card">
+      <img src="../Produtos/img.produtos/Produtos/Miniaturas Personalizadas.png" alt="Decorative Miniature Farm with Animals">
+       <div class="destaque-info">
+        <h3>Miniature</h3>
+        <p class="preco">$45.90</p>
+        <label>Product Description</label>
+        <input type="text" value="Farm miniature">
+        <button class="enviar">Send</button>
+      </div>
+    </div>
+
+    <div class="destaque-card">
+     <img src="../Produtos/img.produtos/Produtos/Velas.png" alt="Handmade Candles">
+        <div class="destaque-info">
+        <h3>Handmade Candles</h3>
+        <p class="preco">$19.90</p>
+        <label>Product Description</label>
+        <input type="text" value="Handmade candle">
+        <button class="enviar">Send</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Your Products -->
+  <section class="produtos">
+    <h2>Your Products</h2>
+    <div class="filtros">
+      <aside>
+        <h4>Keywords</h4>
+        <div class="tags">
+          <span>Crochet ✕</span>
+          <span>Summer ✕</span>
+          <span>Modern ✕</span>
+        </div>
+        <p><strong>Handmade</strong><br>Clothing and accessories with artisan finishing.</p>
+        <p><strong>For Home</strong><br>Decor, utilities, and comfort items.</p>
+        <p><strong>Women's Fashion</strong><br>Style, comfort, and trends for everyday life.</p>
+        <p><strong>Price:</strong> $0 - $100</p>
+        <p><strong>Color:</strong><br>White<br>Beige<br>Colorful</p>
+        <p><strong>Size:</strong><br>S<br>M<br>L</p>
+      </aside>
+      <div class="produtos-lista">
+        <div class="busca">
+          <input type="text" placeholder="Crochet">
+          <button>New</button>
+          <button>Cheapest First</button>
+          <button>Top Rated</button>
+        </div>
+        <div class="grid">
+          <div class="produto-card">
+            <img src="../Produtos/img.produtos/Produtos/Saia de crochê.png" alt="Crochet Skirt">
+         <p>Crochet Skirt</p>
+            <span>$30.90</span>
+          </div>
+          <div class="produto-card">
+            <img src="../Cadastro/img/produto.2.jpg" alt="Simple Pink Crochet Set">
+            <p>Simple Pink Crochet Set</p>
+            <span>$74.00</span>
+          </div>
+          <div class="produto-card">
+            <img src="../Cadastro/img/produto.3.jpg" alt="Colorful Blouse">
+            <p>Colorful Print Blouse</p>
+            <span>$56.00</span>
+          </div>
+          <div class="produto-card">
+            <img src="../Cadastro/img/produto.4.jpg" alt="Short Crochet Shirt">
+            <p>Short Crochet Shirt</p>
+            <span>$25.00</span>
+          </div>
+          <div class="produto-card">
+            <img src="../Cadastro/img/produto.5.jpg" alt="Crochet Skirt Set">
+            <p>Crochet Skirt Set</p>
+            <span>$60.00</span>
+          </div>
+          <div class="produto-card">
+            <img src="../Cadastro/img/produto.6.jpg" alt="Floral Cardigan">
+            <p>Floral Crochet Cardigan</p>
+            <span>$114.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   
+     <!-- FOOTER  -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <p><strong>Vendedoor's © 2025</strong> <br>Opening doors to great business.</p>
+            </div>
+            <div class="footer-col">
+                <p><strong>We Serve</strong> all over Brazil</p>
+                <p>Support: Monday to Friday, from 8am to 6pm</p>
+            </div>
+            <div class="footer-col">
+                <p><strong>Social Media:</strong></p>
+                <p><a href="https://www.instagram.com/vendedoors_oficial?igsh=MTdpOXJwOGhmaW9uNg=="><i class="fab fa-instagram"></i> Instagram</a></p>
+                <p><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+                <p><a href="https://youtube.com/@etecdazonaleste2949?si=Ow6cP2OY3UG0UZ6-"><i class="fab fa-youtube"></i> YouTube</a></p>
+            </div>
+            <div class="footer-col">
+                <p><a href="../Política de Privacidade/Privacidade.html">Privacy Policy</a></p>
+                <p><a href="../Termos de Uso/termos.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+    </main>
+</body>
+
+<script>
+  const tags = document.querySelectorAll('.tags span');
+  const produtos = document.querySelectorAll('.produto-card');
+
+  tags.forEach(tag => {
+    tag.addEventListener('click', () => {
+      const filtro = tag.textContent.replace(' ✕', '').toLowerCase();
+
+      produtos.forEach(prod => {
+        const texto = prod.querySelector('p').textContent.toLowerCase();
+        if(texto.includes(filtro)) {
+          prod.classList.add('filtrado');
+        } else {
+          prod.classList.remove('filtrado');
+        }
+      });
+    });
+  });
+</script>
+
+</html>

@@ -1,0 +1,150 @@
+/* Login Vendedor */
+body {
+  background-color: var(--beige);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 80px 40px 40px;
+  background: var(--beige);
+  flex-wrap: wrap;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.box-esquerda {
+  background: var(--red);
+  color: white;
+  padding: 40px 25px;
+  border-radius: 15px;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-esquerda .icone {
+  width: 100px;
+  height: 100px;
+  background: var(--beige);
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  font-size: 45px;
+}
+.box-esquerda h2 { margin-bottom: 15px; font-size: 24px; }
+
+.box-direita {
+  background: #f8ecd9;
+  padding: 40px;
+  border-radius: 15px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.box-direita form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.box-direita label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+.box-direita input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+.box-direita input:focus {
+  border-color: var(--red);
+  outline: none;
+}
+
+.box-direita button {
+  background: var(--red);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.box-direita button:hover { background: #b71c1c; }
+
+.btn {
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn.entrar { background-color: var(--red); color: white; }
+.btn.entrar:hover { background-color: #b71c1c; }
+
+.btn-cadastro {
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-cadastro:hover {
+  background: #111;
+}/* ==========================================================
+   📱 RESPONSIVIDADE — SOMENTE MOBILE (não altera no desktop)
+========================================================== */
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden !important; /* remove faixa branca */
+  }
+
+  /* LOGIN: empilhar corretamente */
+  .login {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+    max-width: 100% !important;
+  }
+
+  .box-esquerda,
+  .box-direita {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  /* Ícone */
+  .box-esquerda .icone {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}

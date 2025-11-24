@@ -1,0 +1,523 @@
+ :root {
+  --red: #d62828;
+  --beige: #fff3d4;
+  --dark: #2b2b2b;
+  --text: #1a1a1a;
+  --white: #fff;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Header */
+header {
+  background: #d32f2f;
+  color: #fff;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+   color: #000000;
+}
+
+.logo span {
+  font-family: serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+/* Área de perfil */
+.intro {
+  background-color: var(--beige);
+}
+
+.perfil-area {
+  padding: 40px 5%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.perfil-area h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+/* Container dividido */
+.perfil-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--red);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Card do perfil (esquerda) */
+.perfil-card {
+  flex: 1;
+  max-width: 350px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.perfil-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--red, #e63946);
+  margin: 0 auto 15px;
+}
+
+.perfil-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botões do perfil */
+.perfil-btn {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.perfil-btn.confirmar { background: var(--red, #e63946); color: #fff; }
+.perfil-btn.editar { background: #f1f1f1; color: #333; }
+.perfil-btn.salvar { background: var(--dark); color: #fff; }
+
+.perfil-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Formulário (direita) */
+.perfil-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fdfdfd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.perfil-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  text-align: left;
+}
+
+.perfil-form input,
+.perfil-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.perfil-form textarea {
+  resize: none;
+  min-height: 60px;
+}
+
+/* Destaque vendedor */
+.destaque-vendedor {
+  padding: 40px 5%;
+  background: var(--beige);
+  text-align: center;
+}
+
+.destaque-vendedor h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+.destaque-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.destaque-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.destaque-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.destaque-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.destaque-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.preco {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--red);
+}
+
+.destaque-info input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+.enviar {
+  background: var(--red);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.enviar:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+}
+/* Seção Produtos */
+.produtos {
+  padding: 40px 5%;
+  background: var(--beige);
+}
+
+.produtos h2 {
+  text-align: center;
+    font-size: 40px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 16px;
+}
+
+/* Filtros e layout */
+.filtros {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Aside (filtros) */
+aside {
+  width: 220px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+aside h4 {
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.tags span {
+  display: inline-block;
+  background: #eee;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin: 3px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+/* Produtos lista */
+.produtos-lista {
+  flex: 1;
+}
+
+/* Caixa de busca e botões */
+.busca {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.busca input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.busca button {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.busca button:hover {
+  background: #b71c1c;
+}
+
+/* Grid de produtos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* Card de produto */
+.produto-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* Container geral da grid de produtos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center; /* centraliza os cards */
+}
+
+/* Card do produto */
+.produto-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;           /* ocupa todo o espaço do minmax */
+  max-width: 220px;      /* define um tamanho máximo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Imagem do produto */
+.produto-card img {
+  width: 100%;
+  height: 180px;         /* altura fixa para uniformidade */
+  object-fit: cover;     /* mantém proporção e preenche o espaço */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+/* ============================================================
+    📱 RESPONSIVIDADE REAL DO PERFIL DO VENDEDOR 
+   ============================================================ */
+
+/* Remove qualquer espaço branco lateral */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ----- PERFIL (foto + formulário empilhados no mobile) ----- */
+@media (max-width: 900px) {
+
+  .perfil-box {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 25px;
+    padding: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .perfil-card,
+  .perfil-form {
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+
+  .perfil-card {
+    margin: 0 auto;
+  }
+}
+
+/* Título centralizado sempre */
+.perfil-area h1,
+.destaque-vendedor h2,
+.produtos h2 {
+  text-align: center;
+}
+
+/* ----- DESTAQUE DO VENDEDOR ----- */
+@media (max-width: 900px) {
+
+  .destaque-box {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .destaque-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* ----- FILTROS E LISTA DE PRODUTOS ----- */
+@media (max-width: 900px) {
+
+  .filtros {
+    flex-direction: column !important;
+    width: 100%;
+  }
+
+  aside {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .produtos-lista {
+    width: 100% !important;
+  }
+}
+
+/* ----- GRID DOS PRODUTOS ----- */
+@media (max-width: 750px) {
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+    justify-items: center;
+  }
+
+  .produto-card {
+    max-width: 180px !important;
+  }
+}
+
+/* Celular pequeno (para garantir que nada estoura) */
+@media (max-width: 500px) {
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
+  }
+
+  .produto-card {
+    max-width: 160px !important;
+  }
+}
+/* ------- AJUSTE DO FILTRO PARA NÃO FICAR PRA FORA ------- */
+
+.product-filters,
+.filtros,
+.busca {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px;
+}
+
+/* Forçar elementos a nunca ultrapassar a tela */
+.product-filters select,
+.product-filters input,
+.filtros select,
+.filtros input,
+.busca input,
+.busca button {
+  max-width: 100% !important;
+  width: 200px;           /* tamanho equilibrado */
+  flex: 1 1 150px;        /* encolhe e quebra linha quando faltar espaço */
+}
+
+/* Celular pequeno */
+@media (max-width: 500px) {
+  .product-filters select,
+  .product-filters input,
+  .busca input,
+  .busca button {
+    width: 100% !important;
+  }
+}

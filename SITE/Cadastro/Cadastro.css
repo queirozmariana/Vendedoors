@@ -1,0 +1,97 @@
+/* Container geral */
+.perfis {
+  background-color: #d32f2f; /* vermelho forte */
+  padding: 50px 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.intro{
+      text-align: center;
+    padding: 50px 20px;
+    background-color: var(--beige);
+}
+/* Cards */
+.card {
+  background-color: #fff2cc; /* bege igual ao fundo */
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 280px;
+  color: #333;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Escolha{
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--red);
+
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+.card h2 {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #d32f2f;
+}
+
+/* Ícones com Font Awesome */
+.icone {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #d32f2f;
+  border: 4px solid #fff2cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: white;
+}
+
+/* Botões */
+.botoes {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn.entrar {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn.entrar:hover {
+  background-color: #b71c1c;
+}
+
+.btn.cadastro {
+  background-color: #333;
+  color: white;
+}
+
+.btn.cadastro:hover {
+  background-color: #111;
+}

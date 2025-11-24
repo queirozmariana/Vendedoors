@@ -1,0 +1,123 @@
+ :root {
+  --red: #d62828;
+  --beige: #fff3d4;
+  --dark: #2b2b2b;
+  --text: #1a1a1a;
+  --white: #fff;
+  --radius: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+/* Header */
+header {
+  background: #d32f2f;
+  color: #fff;
+  padding: 25px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+   color: #000000;
+}
+
+.logo span {
+  font-family: serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* FOOTER */
+.site-footer {
+  background: var(--dark);
+  color: var(--white);
+  margin-inline: auto;
+  font-size: 14px;
+}
+.footer-grid {
+  display:  flex ;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: start;
+}
+.footer-grid a {
+  color: var(--white);
+  text-decoration: none;
+
+}
+
+.footer-col a:hover {
+  color: #D63C33;
+}
+@media (max-width: 850px) {
+  .footer-grid {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-col {
+    width: 100;
+}
+/* ============================================================
+   📱 HEADER RESPONSIVO SEM MENU HAMBURGUER
+   — No celular o menu vira uma lista vertical abaixo do logo
+============================================================ */
+
+@media (max-width: 820px) {
+
+    header {
+        padding: 15px 20px !important;
+        height: auto;
+        flex-direction: column;      /* empilha logo + menu */
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;      /* menu vira coluna */
+        gap: 10px;
+        padding-bottom: 15px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+  }}
